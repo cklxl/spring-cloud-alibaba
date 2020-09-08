@@ -343,14 +343,12 @@
         <snapshotRepository>
             <id>snapshots</id>
             <name>snapshots</name>
-            <!-- <url>http://192.168.10.242:8081/repository/maven-snapshots/</url> -->
-            <url>http://222.180.200.126:18081/repository/maven-snapshots/</url>
+            <url>http://192.168.10.242:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>releases</id>
             <name>releases</name>
-            <!-- <url>http://192.168.10.242:8081/repository/maven-releases/</url> -->
-            <url>http://222.180.200.126:18081/repository/maven-releases/</url>
+            <url>http://192.168.10.242:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 </project>
