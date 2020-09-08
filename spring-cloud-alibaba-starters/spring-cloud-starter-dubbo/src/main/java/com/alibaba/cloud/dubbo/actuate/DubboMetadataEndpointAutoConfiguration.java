@@ -32,16 +32,16 @@ import org.springframework.context.annotation.PropertySource;
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @ConditionalOnClass(
-        name = "org.springframework.boot.actuate.endpoint.annotation.Endpoint")
+		name = "org.springframework.boot.actuate.endpoint.annotation.Endpoint")
 @PropertySource("classpath:/META-INF/dubbo/default/actuator-endpoints.properties")
 @ManagementContextConfiguration
 public class DubboMetadataEndpointAutoConfiguration {
 
-    @Bean
-    @ConditionalOnMissingBean
-    @ConditionalOnAvailableEndpoint
-    public DubboRestMetadataEndpoint dubboRestMetadataEndpoint() {
-        return new DubboRestMetadataEndpoint();
-    }
+	@Bean
+	@ConditionalOnMissingBean
+	@ConditionalOnAvailableEndpoint
+	public DubboRestMetadataEndpoint dubboRestMetadataEndpoint() {
+		return new DubboRestMetadataEndpoint();
+	}
 
 }
